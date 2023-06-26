@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- Página de Contacto: La estructura de la página debe estar dividida de la siguiente forma: 
+​  Menú con los siguientes enlaces: principal y de cálculo de encomienda. 
+Descripción de la operación a realizar (cálculo de encomienda) 
+
+​  Formulario con los siguientes datos: 
+​  Nombre. (Campo texto). 
+Rut. (Campo texto). 
+ Región Destino. (Campo select) 
+Peso. (Campo number) 
+Comentario. (Campo texto extendido) 
+Botón enviar. 
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="styles.css"/>
+
+
+<!-- 
+​  Menú con los siguientes enlaces: principal y de cálculo de encomienda. 
+ 
+-->
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">EnviosExpress</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Cálculo de encomienda</a>
+              </li>
+              
+            </form>
+          </div>
+        </div>
+
+    </nav>
+
+    <title>Contac</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+</head>
+
+
+<body>
+
+    <h1>Déjanos tus datos de contacto</h1>
+
+    <hr>
+
+    <h3>Completa el siguiente formulario:</h3>         
+
+    <form>
+
+        <!-- a. Nombre Completo. (Campo texto)-->
+
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre Completo" required/>  
+        
+        <br>
+
+         <!-- Rut. (Campo texto).-->    
+
+        <label for="rut">Rut:</label>
+        <input type="text" id="rut" name="rut" placeholder="Ingrese su rut" required/>    
+
+    
+
+        <!-- Región. (Campo select) -->
+
+        <label for="region">Seleccione region de destino:</label>
+        <select id="region" name="region" required>         
+        
+            <option value="rm">Metropolitana</option>
+            <option value="rdelosrios">Region de los rios</option>
+            <option value="rdeloslagos">Region de los lagos</option>
+            <option value="rtarapaca">Region de tarapaca</option>
+
+        </select>
+
+        <br>
+
+        <!-- Peso. (number) -->
+
+        <p>Ingresa el peso:</p>
+        
+        <label for="peso">peso:</label>
+        <input type="number" id="peso" name="peso" placeholder="Ingrese el peso" required/>   
+        
+        
+
+        <br>
+
+        <!-- Comentario. (Campo texto extendido)-->
+
+
+        <label for="comentario">Comentarios:</label>
+
+        <br>
+
+        <textarea cols="50" rows="10" id="comentario"  name="comentario" required> 
+        </textarea>
+
+        <br>
+
+        <input type="submit" value="Enviar">
+  
+                
+
+    </form>
+
+    
+</body>
+
+
+</html>

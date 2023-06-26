@@ -1,0 +1,15 @@
+head {
+    max-width: 100%;
+    color: #36be1b;
+    font-family: HK Grotesk;
+    background-color: var(--color-bg);
+    
+}
+
+body {
+    max-width: 100%;
+    color: #36be1b;
+    font-family: HK Grotesk;
+    background-color: var(--color-bg);
+  }
+
